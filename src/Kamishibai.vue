@@ -16,8 +16,10 @@
         :pages="pages"
       />
     </div>
-    <LoadingView v-else-if="!isErrored"> loading... </LoadingView>
-    <ErrorView v-else> error </ErrorView>
+    <LoadingView class="slideMode" :option="option" v-else-if="!isErrored">
+      loading...
+    </LoadingView>
+    <ErrorView class="slideMode" :option="option" v-else> error </ErrorView>
   </div>
 </template>
 
