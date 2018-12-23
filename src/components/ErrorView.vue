@@ -1,6 +1,6 @@
 <template>
   <div class="slideMode-error">
-    <div class="slideMode-error_body">error</div>
+    <div class="slideMode-error_body">{{ errorReason || 'error' }}</div>
     <SlideControl :option="option" :page="0" :pages="['']" :disable="true" />
   </div>
 </template>
@@ -11,6 +11,7 @@ import SlideControl from './SlideControl.vue'
 
 export default Vue.extend({
   props: {
+    errorReason: String,
     option: Object
   },
   components: {
@@ -30,6 +31,8 @@ export default Vue.extend({
   color: #fff;
   background: #d4645c;
   font-weight: bold;
+  border-radius: 3px;
+  overflow: hidden;
 }
 
 .slideMode-error_body {

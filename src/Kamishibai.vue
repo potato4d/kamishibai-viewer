@@ -19,7 +19,14 @@
     <LoadingView class="slideMode" :option="option" v-else-if="!isErrored">
       loading...
     </LoadingView>
-    <ErrorView class="slideMode" :option="option" v-else> error </ErrorView>
+    <ErrorView
+      :errorReason="errorReason"
+      class="slideMode"
+      :option="option"
+      v-else
+    >
+      error
+    </ErrorView>
   </div>
 </template>
 
@@ -39,6 +46,7 @@ interface LocalState {
   item: Item | null
   page: number
   pages: string[]
+  errorReason: string | null
 }
 
 export default Vue.extend({
@@ -52,7 +60,8 @@ export default Vue.extend({
       isErrored: false,
       item: null,
       page: 0,
-      pages: []
+      pages: [],
+      errorReason: ''
     }
   },
   components: {
@@ -77,6 +86,10 @@ export default Vue.extend({
     }
   },
   async mounted() {
+    if (!(this as any).dataItemId) {
+      this.isErrored = true
+      this.errorReason = '記事 ID が指定されていません。'
+    }
     const link = document.createElement('link')
     link.rel = 'stylesheet'
     link.href =
@@ -107,7 +120,7 @@ export default Vue.extend({
   display: none;
 }
 #app .slideMode {
-  font-size: 10px;
+  font-size: 12px;
   max-width: 850px;
   margin-left: auto;
   margin-right: auto;
