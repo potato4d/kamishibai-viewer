@@ -102,6 +102,9 @@ export default Vue.extend({
 }
 #app .slideMode {
   font-size: 10px;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #app h3 {
   border-bottom: solid 1px #e5e5e5;
