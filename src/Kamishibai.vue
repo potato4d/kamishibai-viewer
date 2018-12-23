@@ -44,8 +44,7 @@ interface LocalState {
 export default Vue.extend({
   name: 'Kamishibai',
   props: {
-    id: String,
-    option: Object
+    'data-item-id': String
   },
   data(): LocalState {
     return {
@@ -62,6 +61,13 @@ export default Vue.extend({
     LoadingView,
     ErrorView
   },
+  computed: {
+    option() {
+      return {
+        version: '0.1.0'
+      }
+    }
+  },
   methods: {
     handleMoveToPrev() {
       this.page = Math.max(0, this.page - 1)
@@ -75,9 +81,9 @@ export default Vue.extend({
     link.rel = 'stylesheet'
     link.href =
       'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
-    document.head.appendChild(link)
+    this.$el.appendChild(link)
     try {
-      const item = await fetchItem(this.id)
+      const item = await fetchItem((this as any).dataItemId)
       this.item = item
       this.pages = parseItem(item)
       this.isFetched = true

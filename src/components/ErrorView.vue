@@ -1,6 +1,6 @@
 <template>
-  <div class="slideMode-loading">
-    <div class="slideMode-loading_body"></div>
+  <div class="slideMode-error">
+    <div class="slideMode-error_body">error</div>
     <SlideControl :option="option" :page="0" :pages="['']" :disable="true" />
   </div>
 </template>
@@ -20,7 +20,7 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-.slideMode-loading {
+.slideMode-error {
   width: 100%;
   height: 480px;
   display: flex;
@@ -32,7 +32,7 @@ export default Vue.extend({
   font-weight: bold;
 }
 
-.slideMode-loading_body {
+.slideMode-error_body {
   width: 100%;
   height: 430px;
   display: flex;

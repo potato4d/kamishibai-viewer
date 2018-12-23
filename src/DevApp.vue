@@ -6,12 +6,7 @@
         <small>Web Component based Qiita slide viewer built with Vue.js</small>
       </h1>
     </div>
-    <Kamishibai
-      :id="'4ff5873776992f0511d6'"
-      :option="{
-        version: '0.1.0'
-      }"
-    />
+    <Kamishibai :itemid="'4ff5873776992f0511d6'" />
     <div class="devapp-container_content"></div>
   </div>
 </template>

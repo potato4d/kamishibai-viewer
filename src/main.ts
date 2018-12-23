@@ -1,8 +1,5 @@
 import Vue from 'vue'
-import DevApp from './DevApp.vue'
+const { default: wrap } = require('@vue/web-component-wrapper')
+import Kamishibai from './Kamishibai.vue'
 
-Vue.config.productionTip = false
-
-new Vue({
-  render: h => h(DevApp)
-}).$mount('#app')
+window.customElements.define('kamishibai-viewer', wrap(Vue, Kamishibai))
