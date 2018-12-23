@@ -11,6 +11,8 @@ Because breaking changes may be born, please be careful when using.
 
 This is a library for embedding slides of Qiita which is a Japanese technical document sharing site.
 
+demo: https://potato4d.github.io/kamishibai-viewer/dist/0.1.0/demo.html
+
 ## Usage
 
 ※ As we are planning to publish to webcomponents.org, the URL may change!
@@ -18,7 +20,7 @@ This is a library for embedding slides of Qiita which is a Japanese technical do
 1. Load runtime on script tag
 
 ```
-<script src="https://potato4d.github.io/kamishibai/dist/0.1.0/kamishibai.min.js"></script>
+<script src="https://potato4d.github.io/kamishibai-viewer/dist/0.1.0/kamishibai.min.js"></script>
 ```
 
 2. Write custom element tag for your HTML
