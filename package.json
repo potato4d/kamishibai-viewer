@@ -1,0 +1,31 @@
+{
+  "name": "kamishibai",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "format": "prettier './src/**/*.{ts,vue}' --write"
+  },
+  "dependencies": {
+    "@increments/qiita-slide-mode": "^0.2.1",
+    "axios": "^0.18.0",
+    "git": "^0.1.5",
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/jest": "^23.1.4",
+    "@vue/cli-plugin-typescript": "^3.2.0",
+    "@vue/cli-plugin-unit-jest": "^3.2.0",
+    "@vue/cli-service": "^3.2.0",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "node-sass": "^4.9.0",
+    "prettier": "^1.15.3",
+    "sass-loader": "^7.0.1",
+    "ts-jest": "^23.0.0",
+    "typescript": "3.0.1",
+    "vue-template-compiler": "^2.5.17"
+  }
+}
