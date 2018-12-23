@@ -1,5 +1,5 @@
 import Vue from 'vue'
 const { default: wrap } = require('@vue/web-component-wrapper')
-import Kamishibai from './Kamishibai.vue'
+const { default: Kamishibai } = require('./Kamishibai.vue?shadow')
 
 window.customElements.define('kamishibai-viewer', wrap(Vue, Kamishibai))

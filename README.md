@@ -20,7 +20,8 @@ demo: https://potato4d.github.io/kamishibai-viewer/dist/0.1.0/demo.html
 1. Load runtime on script tag
 
 ```
-<script src="https://potato4d.github.io/kamishibai-viewer/dist/0.1.0/kamishibai.min.js"></script>
+<script src="https://unpkg.com/vue"></script>
+<script src="https://potato4d.github.io/kamishibai/dist/0.1.0/kamishibai.min.js"></script>
 ```
 
 2. Write custom element tag for your HTML

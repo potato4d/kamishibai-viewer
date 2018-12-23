@@ -37,7 +37,7 @@
       <a
         style="color: #fff;text-decoration: none;"
         target="_blank"
-        href="https://github.com/potato4d/kamishibai"
+        href="https://github.com/potato4d/kamishibai-viewer"
       >
         kamishibai v{{ option.version }}
       </a>
