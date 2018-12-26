@@ -2,6 +2,8 @@
 
 Web Component based Qiita slide viewer built with Vue.js(Vue CLI v3)
 
+[![Image from Gyazo](https://i.gyazo.com/447d26f36fd0d346464be0901ee51ddc.gif)](https://gyazo.com/447d26f36fd0d346464be0901ee51ddc)
+
 ## !! Under development !!
 
 Kamishibai is a under development library.
