@@ -2,7 +2,7 @@
   <div class="devapp-container">
     <div class="devapp-container_content">
       <h1>
-        <span>Kamishibai Viewer v0.1.0</span><br />
+        <span>Kamishibai Viewer v0.1.1</span><br />
         <small>
           <small>
             Web Component based Qiita slide viewer built with Vue.js
@@ -29,8 +29,8 @@
         <br />
         demo:
         <a
-          href="https://potato4d.github.io/kamishibai-viewer/dist/0.1.0/demo.html"
-          >https://potato4d.github.io/kamishibai-viewer/dist/0.1.0/demo.html</a
+          href="https://potato4d.github.io/kamishibai-viewer/dist/0.1.1/demo.html"
+          >https://potato4d.github.io/kamishibai-viewer/dist/0.1.1/demo.html</a
         >
       </p>
     </div>
@@ -47,7 +47,7 @@
       <div>
         <pre>
           <code>&lt;script src="https://unpkg.com/vue@2.5.21/dist/vue.min.js"&gt;&lt;/script&gt;</code>
-          <code>&lt;script src="https://potato4d.github.io/kamishibai/dist/0.1.0/kamishibai.min.js"&gt;&lt;/script&gt;</code>
+          <code>&lt;script src="https://potato4d.github.io/kamishibai/dist/0.1.1/kamishibai.min.js"&gt;&lt;/script&gt;</code>
         </pre>
       </div>
       <p>2. Write custom element tag for your HTML</p>
