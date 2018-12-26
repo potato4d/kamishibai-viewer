@@ -1,12 +1,18 @@
 import axios from 'axios'
 import { Item } from '../types/item'
 
-export async function fetchItem(id: string) {
+interface Option {
+  token: string
+}
+
+export async function fetchItem(id: string, option?: Option) {
   let config
-  if (process.env.VUE_APP_QIITA_TOKEN) {
+  const token =
+    process.env.VUE_APP_QIITA_TOKEN || (option || ({} as Option)).token
+  if (token) {
     config = {
       headers: {
-        authorization: `Bearer ${process.env.VUE_APP_QIITA_TOKEN}`
+        authorization: `Bearer ${token}`
       }
     }
   }

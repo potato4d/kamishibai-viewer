@@ -46,7 +46,7 @@
       <p>1. Load runtime on script tag</p>
       <div>
         <pre>
-          <code>&lt;script src="https://unpkg.com/vue"&gt;&lt;/script&gt;</code>
+          <code>&lt;script src="https://unpkg.com/vue@2.5.21/dist/vue.min.js"&gt;&lt;/script&gt;</code>
           <code>&lt;script src="https://potato4d.github.io/kamishibai/dist/0.1.0/kamishibai.min.js"&gt;&lt;/script&gt;</code>
         </pre>
       </div>
