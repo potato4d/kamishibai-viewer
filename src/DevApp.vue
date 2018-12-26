@@ -25,9 +25,13 @@
       <h2>About</h2>
       <p>
         This is a library for embedding slides of Qiita which is a Japanese
-        technical document sharing site.<br>
-        <br>
-        demo: <a href="https://potato4d.github.io/kamishibai-viewer/dist/0.1.0/demo.html">https://potato4d.github.io/kamishibai-viewer/dist/0.1.0/demo.html</a>
+        technical document sharing site.<br />
+        <br />
+        demo:
+        <a
+          href="https://potato4d.github.io/kamishibai-viewer/dist/0.1.0/demo.html"
+          >https://potato4d.github.io/kamishibai-viewer/dist/0.1.0/demo.html</a
+        >
       </p>
     </div>
 
