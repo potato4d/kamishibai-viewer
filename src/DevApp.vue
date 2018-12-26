@@ -78,6 +78,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import Kamishibai from './Kamishibai.vue'
+import { sanitizeAllTags } from '@/utils/sanitizer'
 
 export default Vue.extend({
   components: {
@@ -85,7 +86,7 @@ export default Vue.extend({
   },
   filters: {
     h(val: string) {
-      return val.replace(/</g, '&gt;').replace(/>/g, '&lt;')
+      return sanitizeAllTags(val)
     }
   }
 })
