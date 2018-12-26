@@ -1,6 +1,7 @@
 {
   "name": "kamishibai-viewer",
   "version": "0.1.0",
+  "main": "src/Kamishibai.vue",
   "scripts": {
     "serve": "vue-cli-service serve src/development.ts",
     "serve:prod": "vue-cli-service serve",
