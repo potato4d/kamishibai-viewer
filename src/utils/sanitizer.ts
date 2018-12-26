@@ -1,7 +1,5 @@
-const sanitize = require('sanitize-html')
+import xss from 'xss'
 
 export function sanitizeAllTags(html: string): string {
-  return sanitize(html, {
-    allowedTags: []
-  })
+  return xss(html)
 }

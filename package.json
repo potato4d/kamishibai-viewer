@@ -15,7 +15,8 @@
     "@vue/web-component-wrapper": "^1.2.0",
     "axios": "^0.18.0",
     "sanitize-html": "^1.20.0",
-    "vue": "^2.5.17"
+    "vue": "^2.5.17",
+    "xss": "^1.0.3"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
