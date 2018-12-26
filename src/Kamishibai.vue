@@ -97,6 +97,7 @@ export default Vue.extend({
       this.pages = parseItem(item)
       this.isFetched = true
     } catch (e) {
+      console.error(e)
       this.isErrored = true
     }
   }
