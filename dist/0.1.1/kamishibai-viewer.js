@@ -1582,12 +1582,12 @@ module.exports = Vue;
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"ca0e2238-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/Kamishibai.vue?vue&type=template&id=7385fcbf&shadow
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"ca0e2238-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/Kamishibai.vue?vue&type=template&id=24c2e01e&shadow
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"app"}},[(_vm.isFetched)?_c('div',{staticClass:"slideMode"},[_c('SlideViewer',{attrs:{"option":_vm.option,"page":_vm.page,"pages":_vm.pages},on:{"prev":_vm.handleMoveToPrev,"next":_vm.handleMoveToNext}}),_c('SlideControl',{attrs:{"option":_vm.option,"page":_vm.page,"pages":_vm.pages},on:{"prev":_vm.handleMoveToPrev,"next":_vm.handleMoveToNext}})],1):(!_vm.isErrored)?_c('LoadingView',{staticClass:"slideMode",attrs:{"option":_vm.option}}):_c('ErrorView',{staticClass:"slideMode",attrs:{"errorReason":_vm.errorReason,"option":_vm.option}})],1)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/Kamishibai.vue?vue&type=template&id=7385fcbf&shadow
+// CONCATENATED MODULE: ./src/Kamishibai.vue?vue&type=template&id=24c2e01e&shadow
 
 // CONCATENATED MODULE: ./node_modules/tslib/tslib.es6.js
 /*! *****************************************************************************
@@ -2138,7 +2138,7 @@ function fetchItem(id, option) {
     computed: {
         option: function () {
             return {
-                version: '0.1.0'
+                version: '0.1.1'
             };
         }
     },
