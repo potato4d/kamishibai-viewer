@@ -1,14 +1,13 @@
 import { Item } from '@/types/item'
+import { sanitizeAllTags } from './sanitizer'
 
 export function parseItem(item: Item): string[] {
   const doc = new DOMParser().parseFromString(item.rendered_body, 'text/html')
   const elements = doc.querySelectorAll('html > body > *')
   const sections = [firstPage(item)]
-  let i = 0
   for (let el of elements) {
     if (
-      el.tagName === 'H1' ||
-      el.tagName === 'H2' ||
+      ['H1', 'H2'].includes(el.tagName) ||
       el.classList.contains('footnotes')
     ) {
       sections.push('')
@@ -20,14 +19,15 @@ export function parseItem(item: Item): string[] {
     sections[sections.length - 1] = `${sections[sections.length - 1]}${
       el.outerHTML
     }`
-    i++
   }
   return sections.filter(section => section)
 }
 
-const firstPage = (item: Item) =>
-  `<div class="slideMode-Viewer_content slideMode-Viewer_content--firstSlide markdownContent"><h1>${
-    item.title
-  }</h1><div class="slideMode-Viewer_content--firstSlideAuthor">by ${
-    item.user.id
-  }</div></div>`
+const firstPage = (item: Item) => `
+<div class="slideMode-Viewer_content slideMode-Viewer_content--firstSlide markdownContent">
+  <h1>${sanitizeAllTags(item.title)}</h1>
+  <div class="slideMode-Viewer_content--firstSlideAuthor">
+    by ${sanitizeAllTags(item.user.id)}
+  </div>
+</div>
+`
