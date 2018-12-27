@@ -25,7 +25,11 @@
     <span class="slideMode-Dashboard_pageCount"
       >{{ page + 1 }} / {{ pages.length }}</span
     >
-    <div class="slideMode-Dashboard_progress">
+    <div
+      class="slideMode-Dashboard_progress"
+      ref="progress"
+      @click="handleClickProgress"
+    >
       <div
         class="slideMode-Dashboard_progressFill"
         :style="{
@@ -48,6 +52,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { getSlideCursor } from '@/utils/getSlideCursor'
 
 export default Vue.extend({
   props: {
@@ -55,6 +60,17 @@ export default Vue.extend({
     pages: Array as () => string[],
     page: Number,
     option: Object
+  },
+  methods: {
+    handleClickProgress(event: MouseEvent) {
+      const progress = this.$refs.progress! as HTMLElement
+      const clientX = event.clientX - progress.getBoundingClientRect().left
+      const p = Math.min(
+        this.pages.length,
+        getSlideCursor(this.pages.length, progress.clientWidth, clientX) - 1
+      )
+      this.$emit('move', p)
+    }
   }
 })
 </script>
