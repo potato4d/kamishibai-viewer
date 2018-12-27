@@ -86,11 +86,6 @@ export default Vue.extend({
       this.isErrored = true
       this.errorReason = '記事 ID が指定されていません。'
     }
-    const link = document.createElement('link')
-    link.rel = 'stylesheet'
-    link.href =
-      'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
-    this.$el.appendChild(link)
     try {
       const item = await fetchItem((this as any).dataItemId)
       this.item = item

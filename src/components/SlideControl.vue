@@ -9,7 +9,7 @@
         'slideMode-Dashboard_button--clickable': page !== 0 && !disable
       }"
     >
-      <i class="fa fa-backward"> </i>
+      <v-icon name="backward" class="icon" />
     </button>
     <button
       class="slideMode-Dashboard_button slideMode-Dashboard_button--next "
@@ -20,7 +20,7 @@
           page !== pages.length - 1 && !disable
       }"
     >
-      <i class="fa fa-forward"> </i>
+      <v-icon name="forward" class="icon" />
     </button>
     <span class="slideMode-Dashboard_pageCount"
       >{{ page + 1 }} / {{ pages.length }}</span
@@ -48,8 +48,14 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import 'vue-awesome/icons/forward'
+import 'vue-awesome/icons/backward'
+const { default: Icon } = require('vue-awesome/components/Icon')
 
 export default Vue.extend({
+  components: {
+    'v-icon': Icon
+  },
   props: {
     disable: Boolean,
     pages: Array as () => string[],
@@ -62,5 +68,9 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .slideMode-Dashboard {
   display: flex !important;
+}
+.icon {
+  transform: scale(0.8);
+  margin-top: 4px;
 }
 </style>
