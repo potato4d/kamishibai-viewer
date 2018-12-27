@@ -1,5 +1,4 @@
 <template>
-  <!-- <div> -->
   <div class="slideMode-Dashboard">
     <button
       class="slideMode-Dashboard_button slideMode-Dashboard_button--prev "
@@ -43,7 +42,6 @@
       </a>
     </div>
   </div>
-  <!-- </div> -->
 </template>
 
 <script lang="ts">
