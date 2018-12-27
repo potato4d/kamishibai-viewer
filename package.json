@@ -14,6 +14,7 @@
     "@increments/qiita-slide-mode": "^0.2.1",
     "@vue/web-component-wrapper": "^1.2.0",
     "vue": "^2.5.17",
+    "vue-awesome": "^3.2.0",
     "xss": "^1.0.3"
   },
   "devDependencies": {
