@@ -11,6 +11,7 @@
       <SlideControl
         @prev="handleMoveToPrev"
         @next="handleMoveToNext"
+        @move="handleMoveToPage"
         :option="option"
         :page="page"
         :pages="pages"
@@ -79,6 +80,9 @@ export default Vue.extend({
     },
     handleMoveToNext() {
       this.page = Math.min(this.pages.length - 1, this.page + 1)
+    },
+    handleMoveToPage(page: number) {
+      this.page = page
     }
   },
   async mounted() {
