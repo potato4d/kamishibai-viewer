@@ -11,7 +11,7 @@
       </h1>
     </div>
 
-    <Kamishibai data-item-id="4ff5873776992f0511d6" />
+    <Kamishibai itemid="4ff5873776992f0511d6" />
 
     <div class="devapp-container_content">
       <h2>!! Under development !!</h2>
@@ -57,6 +57,18 @@
         </pre>
       </div>
       <p>3. Done!</p>
+    </div>
+
+    <div class="devapp-container_content">
+      <h2>Props</h2>
+      <dl>
+        <dt><strong>itemid: String</strong></dt>
+        <dd style="margin-top: 10px;margin-bottom: 10px;">Qiita item ID</dd>
+        <dt><strong>apikey?: String</strong></dt>
+        <dd style="margin-top: 10px;margin-bottom: 10px;">
+          Qiita personal access token
+        </dd>
+      </dl>
     </div>
 
     <div class="devapp-container_content">

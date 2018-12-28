@@ -49,7 +49,12 @@ interface LocalState {
 export default Vue.extend({
   name: 'Kamishibai',
   props: {
-    'data-item-id': String
+    itemid: String,
+    apikey: {
+      type: String,
+      required: false,
+      default: ''
+    }
   },
   data(): LocalState {
     return {
@@ -68,8 +73,10 @@ export default Vue.extend({
     ErrorView
   },
   computed: {
-    option() {
+    option(): { apikey: string; version: string } {
+      const apikey = this.apikey
       return {
+        apikey,
         version: '0.1.1'
       }
     }
@@ -86,12 +93,12 @@ export default Vue.extend({
     }
   },
   async mounted() {
-    if (!(this as any).dataItemId) {
+    if (!this.itemid) {
       this.isErrored = true
       this.errorReason = '記事 ID が指定されていません。'
     }
     try {
-      const item = await fetchItem((this as any).dataItemId)
+      const item = await fetchItem(this.itemid, { token: this.option.apikey })
       this.item = item
       this.pages = parseItem(item)
       this.isFetched = true
