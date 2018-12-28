@@ -1,5 +1,4 @@
 import { Item } from '../types/item'
-const { VUE_APP_QIITA_TOKEN } = process.env
 
 interface Option {
   token: string
@@ -7,7 +6,7 @@ interface Option {
 
 export async function fetchItem(id: string, option?: Option) {
   let config = {}
-  const token = VUE_APP_QIITA_TOKEN || (option || ({} as Option)).token
+  const token = (option || ({} as Option)).token
   if (token) {
     config = {
       headers: {
