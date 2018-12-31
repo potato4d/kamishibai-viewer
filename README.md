@@ -34,6 +34,12 @@ demo: https://potato4d.github.io/kamishibai-viewer/dist/0.1.1/demo.html
 
 3. Done!
 
+## Props
+- itemid: String
+  - Qiita item ID
+- apikey?: String
+  - Qiita personal access token
+
 ## LICENSE
 
 MIT @ HANATANI Takuma(@potato4d)
