@@ -40,6 +40,39 @@ demo: https://potato4d.github.io/kamishibai-viewer/dist/0.1.1/demo.html
 - apikey?: String
   - Qiita personal access token
 
+## Contributing
+
+requirements:
+
+- Node: Current LTS
+- Yarn: 1.12.0 or higher
+
+### clone repository
+
+```bash
+$ git clone https://github.com/potato4d/kamishibai-viewer
+$ cd kamishibai-viewer
+```
+
+### Install deps
+
+```bash
+$ yarn
+```
+
+### Run development server
+
+```bash
+$ yarn serve
+```
+
+### Build
+
+```bash
+$ yarn build:web # Build Development website
+$ yarn build # Build Web Component
+```
+
 ## LICENSE
 
 MIT @ HANATANI Takuma(@potato4d)
