@@ -1,5 +1,7 @@
 # Kamishibai Viewer
 
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/potato4d/kamishibai-viewer)
+
 Web Component based Qiita slide viewer built with Vue.js(Vue CLI v3)
 
 [![Image from Gyazo](https://i.gyazo.com/447d26f36fd0d346464be0901ee51ddc.gif)](https://gyazo.com/447d26f36fd0d346464be0901ee51ddc)
