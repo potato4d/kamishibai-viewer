@@ -32,7 +32,7 @@ demo: https://potato4d.github.io/kamishibai-viewer/dist/1.0.0/demo.html
 
 2. Write custom element tag for your HTML
 
-```
+```html
 <kamishibai-viewer itemid="4ff5873776992f0511d6"></kamishibai-viewer>
 ```
 
