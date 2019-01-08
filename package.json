@@ -1,11 +1,11 @@
 {
   "name": "kamishibai-viewer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "src/Kamishibai.vue",
   "scripts": {
     "serve": "vue-cli-service serve src/development.ts",
     "serve:prod": "vue-cli-service serve",
-    "build": "cross-env BUILD_TYPE=lib VUE_CLI_CSS_SHADOW_MODE=true vue-cli-service build --dest dist/dist/1.0.0/ --target wc --name kamishibai-viewer ./src/main.ts",
+    "build": "cross-env BUILD_TYPE=lib VUE_CLI_CSS_SHADOW_MODE=true vue-cli-service build --dest dist/dist/1.0.2/ --target wc --name kamishibai-viewer ./src/main.ts",
     "build:web": "cross-env BUILD_TYPE=app vue-cli-service build --dest dist ./src/development.ts",
     "test:unit": "vue-cli-service test:unit",
     "format": "prettier './src/**/*.{ts,vue}' --write"
