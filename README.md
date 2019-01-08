@@ -6,6 +6,8 @@ Web Component based Qiita slide viewer built with Vue.js(Vue CLI v3)
 
 [![Image from Gyazo](https://i.gyazo.com/447d26f36fd0d346464be0901ee51ddc.gif)](https://gyazo.com/447d26f36fd0d346464be0901ee51ddc)
 
+<kamishibai-viewer itemid="4ff5873776992f0511d6"></kamishibai-viewer>
+
 ## !! Under development !!
 
 Kamishibai is a under development library.
@@ -31,7 +33,7 @@ demo: https://potato4d.github.io/kamishibai-viewer/dist/1.0.0/demo.html
 2. Write custom element tag for your HTML
 
 ```
-<kamishibai-viewer data-item-id="4ff5873776992f0511d6"></kamishibai-viewer>
+<kamishibai-viewer itemid="4ff5873776992f0511d6"></kamishibai-viewer>
 ```
 
 3. Done!
