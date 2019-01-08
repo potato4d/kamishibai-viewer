@@ -2,11 +2,13 @@
 
 [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/potato4d/kamishibai-viewer)
 
+<!--
+<kamishibai-viewer itemid="4ff5873776992f0511d6"></kamishibai-viewer>
+-->
+
 Web Component based Qiita slide viewer built with Vue.js(Vue CLI v3)
 
 [![Image from Gyazo](https://i.gyazo.com/447d26f36fd0d346464be0901ee51ddc.gif)](https://gyazo.com/447d26f36fd0d346464be0901ee51ddc)
-
-<kamishibai-viewer itemid="4ff5873776992f0511d6"></kamishibai-viewer>
 
 ## !! Under development !!
 
