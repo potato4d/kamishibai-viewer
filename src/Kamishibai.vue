@@ -77,7 +77,7 @@ export default Vue.extend({
       const apikey = this.apikey
       return {
         apikey,
-        version: '1.0.4'
+        version: '1.0.6'
       }
     }
   },
