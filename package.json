@@ -22,19 +22,19 @@
     "xss": "^1.0.3"
   },
   "devDependencies": {
-    "@types/jest": "^23.1.4",
-    "@vue/cli-plugin-typescript": "^3.2.0",
-    "@vue/cli-plugin-unit-jest": "^3.2.0",
-    "@vue/cli-service": "^3.2.0",
-    "@vue/test-utils": "^1.0.0-beta.20",
-    "cross-env": "^5.2.0",
-    "gh-pages": "^2.0.1",
-    "node-sass": "^4.9.0",
-    "prettier": "^1.15.3",
-    "sass-loader": "^7.0.1",
-    "standard-version": "^4.4.0",
-    "ts-jest": "^23.0.0",
+    "@types/jest": "23.3.10",
+    "@vue/cli-plugin-typescript": "3.2.0",
+    "@vue/cli-plugin-unit-jest": "3.2.0",
+    "@vue/cli-service": "3.2.0",
+    "@vue/test-utils": "1.0.0-beta.27",
+    "cross-env": "5.2.0",
+    "gh-pages": "2.0.1",
+    "node-sass": "4.11.0",
+    "prettier": "1.15.3",
+    "sass-loader": "7.1.0",
+    "standard-version": "4.4.0",
+    "ts-jest": "23.10.5",
     "typescript": "3.0.1",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "2.5.21"
   }
 }
