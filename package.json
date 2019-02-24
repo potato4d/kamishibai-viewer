@@ -35,6 +35,6 @@
     "standard-version": "4.4.0",
     "ts-jest": "23.10.5",
     "typescript": "3.3.3333",
-    "vue-template-compiler": "2.5.21"
+    "vue-template-compiler": "2.6.7"
   }
 }
